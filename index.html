@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Blog</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+        <!-- 📊 Reading Progress Bar -->
+        <div id="progress-bar"></div>
+    
+        <!-- Your Blog Header -->
+      
+        <!-- ⬆️ Back to Top Button -->
+<button id="backToTop" title="Go to top">⬆️</button>
+
+    
+    </body>
+    
+    <header>
+        <h1>My Blog</h1>
+        <button id="darkModeToggle">🌙</button>
+        <!-- 📊 Reading Progress Bar -->
+<div id="progress-bar"></div>
+
+    </header>
+    
+    
+    <section class="hero">
+        <h2>Welcome to My Blog</h2>
+        <p>Sharing insights, stories, and experiences.</p>
+    </section>
+    
+    <input type="text" id="searchBar" placeholder="Search posts..." />
+
+    <div class="filter-buttons">
+        <button class="filter-btn" data-category="all">All</button>
+        <button class="filter-btn" data-category="technology">Technology</button>
+        <button class="filter-btn" data-category="lifestyle">Lifestyle</button>
+        <button class="filter-btn" data-category="business">Business</button>
+    </div>
+  
+
+    <div class="blog-container">
+        <!-- 📄 Blog Content -->
+        <div class="blog-content">
+            <h1>My Blog Post</h1>
+            <p>Blog content goes here...</p>
+        </div>
+    
+        <!-- 📌 Sticky Sidebar -->
+        <aside class="sidebar">
+            <h2>📌 Categories</h2>
+            <ul>
+                <li><a href="#">SEO</a></li>
+                <li><a href="#">Marketing</a></li>
+                <li><a href="#">Technology</a></li>
+                <li><a href="#">Lifestyle</a></li>
+            </ul>
+    
+            <h2>🔥 Popular Posts</h2>
+            <ul>
+                <li><a href="#">Boost SEO in 2024</a></li>
+                <li><a href="#">10 Blogging Tips</a></li>
+                <li><a href="#">Monetize Your Blog</a></li>
+            </ul>
+        </aside>
+    </div>
+    <!-- ⭐ Featured Posts Section -->
+<section class="featured-posts">
+    <h2>⭐ Featured Posts</h2>
+    <div class="featured-container">
+        <article class="featured-post">
+            <img src="images/post1.jpg" alt="Featured Post 1">
+            <h3><a href="post1.html">🚀 How to Boost Your SEO in 2024</a></h3>
+        </article>
+        <article class="featured-post">
+            <img src="images/post2.jpg" alt="Featured Post 2">
+            <h3><a href="post2.html">📈 10 Tips for Growing Your Blog Traffic</a></h3>
+        </article>
+        <article class="featured-post">
+            <img src="images/post3.jpg" alt="Featured Post 3">
+            <h3><a href="post3.html">💰 Monetize Your Blog with These Strategies</a></h3>
+        </article>
+    </div>
+</section>
+
+<!-- 📑 Table of Contents -->
+<div id="table-of-contents">
+    <h2>📖 Table of Contents</h2>
+    <ul id="toc-list"></ul>
+</div>
+
+<!-- ⏳ Estimated Reading Time -->
+<p id="reading-time"></p>
+
+    <main class="blog-container">
+        <article class="blog-post" data-category="technology">
+            <div class="related-posts">
+                <h3>📖 Related Posts</h3>
+                <div class="related-container">
+                    <a href="post2.html" class="related-post">
+                        <img src="images/post2.jpg" alt="Post 2">
+                        <p>🔥 5 SEO Tips for Beginners</p>
+                    </a>
+                    <a href="post3.html" class="related-post">
+                        <img src="images/post3.jpg" alt="Post 3">
+                        <p>🚀 How to Speed Up Your Website</p>
+                    </a>
+                    <a href="post4.html" class="related-post">
+                        <img src="images/post4.jpg" alt="Post 4">
+                        <p>📱 Mobile-Friendly Design Strategies</p>
+                    </a>
+                </div>
+            </div>
+            
+            
+        
+            
+        </article>
+
+        
+        
+        
+        <article class="blog-post" data-category="lifestyle">
+            <h2>Post Title 2</h2>
+            <p class="date">Posted on <span class="post-date"></span></p>
+            <p>Lorem</p>
+            <a href="#">Read More</a>
+            <div class="share-buttons">
+                <h3>📢 Share This Post:</h3>
+                <a href="#" id="share-facebook" target="_blank" class="share-btn facebook">📘 Facebook</a>
+                <a href="#" id="share-twitter" target="_blank" class="share-btn twitter">🐦 Twitter</a>
+                <a href="#" id="share-linkedin" target="_blank" class="share-btn linkedin">💼 LinkedIn</a>
+                <a href="#" id="share-whatsapp" target="_blank" class="share-btn whatsapp">📱 WhatsApp</a>
+            </div>
+            
+        </article>
+        
+        
+        
+    </main>
+    <div class="comment-section">
+        <h3>Leave a Comment</h3>
+        <textarea id="commentInput" placeholder="Write your comment here..."></textarea>
+        <button onclick="addComment()">Post Comment</button>
+        
+        <div class="comment-list">
+            <!-- Comments will appear here -->
+        </div>
+    </div>
+    <div class="newsletter">
+        <h3>📩 Subscribe to Our Newsletter</h3>
+        <p>Stay updated with our latest posts and exclusive content!</p>
+        <input type="email" id="emailInput" placeholder="Enter your email..." required>
+        <button onclick="subscribeNewsletter()">Subscribe</button>
+        <p id="subscriptionMessage"></p>
+    </div>
+        
+    <footer>
+        <p>&copy; 2025 My Blog. All Rights Reserved.</p>
+    </footer>
+    
+    <script src="script.js"></script>
+
+    <!-- AOS Library -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+
+</body>
+</html>
